@@ -1,0 +1,37 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "A practice npm package for learning and experimenting with Node.js and JavaScript. Designed to help developers understand package creation, publishing, and usage in real projects.",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyanaryan-parida/Namaste_React.git"
+  },
+  "keywords": [
+    "Namaste",
+    "React"
+  ],
+  "author": "Satyanarayan Parida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyanaryan-parida/Namaste_React/issues"
+  },
+  "homepage": "https://github.com/Satyanaryan-parida/Namaste_React#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    ">0.5%",
+    "last 2 versions",
+    "not dead",
+    "not op_mini all"
+  ]
+
+}
