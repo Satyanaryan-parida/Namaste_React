@@ -1,75 +1,33 @@
-import React from "react";
-import {createRoot} from "react-dom/client"
+// import React from "react";
+// import {createRoot} from "react-dom/client"
 
 
+
+// const root = createRoot(document.getElementById("main"));
+
+import React from "react"
+import { createRoot } from "react-dom/client"
 
 const root = createRoot(document.getElementById("main"));
-const heading = React.createElement(
-    "h1",
-    {
-        key: "heading",   // ✅ unique key
-        style: {
-            color: "white",
-            textAlign: "center",
-            textDecoration: "wavy underline yellowgreen",
-            textUnderlineOffset: "8px",
-            textTransform:"capitalize"
-        },
-    },
-    "Hello from Namaste React❤️"
+const paragraph1 = <p style={{color:"orange"}}>This is a Para</p>;
+const Innerdiv = () => (<div style={{backgroundColor:"red",color:"white",width:"max-content"}}>This is a div</div>);
+
+const Heading = () => (<h1>Namaste React 💕</h1>);
+
+const Section1 = () => (
+    <section id="mainSection">
+        {Heading()}
+        <div className="continer">
+            <div className="box box1"></div>
+            <div className="box box2"></div>
+        </div>
+        <div className="continer1">
+            <div className="box box1"></div>
+            <div className="box box2"></div>
+        </div>
+        {paragraph1}
+        {Innerdiv()}
+        {/* we can also write <Innerdiv /> and <Innerdiv> </Innerdiv>*/}
+    </section>
 );
-
-const parentDiv = React.createElement(
-    "div",
-    {
-        key: "parentDiv",   // ✅ unique key
-        id: "parentDiv",
-        style: {
-            width: "max-content",
-            height: "max-content",
-            padding: "10px",
-            backgroundColor: "#8AA624",
-            margin: "0 auto",
-        },
-    },
-    [
-        React.createElement(
-            "div",
-            {
-                key: "childDiv1",   // ✅ unique key
-                className: "childDiv1",
-                style: {
-                    width: "100px",
-                    height: "100px",
-                    padding: "5px",
-                    backgroundColor: "#E62727",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                },
-            },
-            [
-                React.createElement(
-                    "div",
-                    {
-                        key: "childDiv2",   // ✅ unique key
-                        className: "childDiv2",
-                        style: {
-                            width: "90px",
-                            height: "90px",
-                            backgroundColor: "#0D1164",
-                        },
-                    },
-                    []
-                ),
-            ]
-        ),
-    ]
-);
-
-const container = React.createElement("div", { className: "container" }, [
-    heading,
-    parentDiv,
-]);
-
-root.render(container);
+root.render(Section1())

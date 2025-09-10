@@ -1,3 +1,81 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color:black;
+}
+.child{
+    color: white;
+}
+
+
+h1{
+    color: hotpink;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#mainSection{
+    padding: 10px;
+}
+.continer{
+    margin-top: 20px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+}
+.continer1{
+    height:200px;
+    display: flex;
+    justify-content: center;
+    transform: rotateZ(180deg);
+}
+.box{
+    width: clamp(20%,30%,40%);
+    height: 100%;
+    transition: 1s ease-in;
+}
+.box1{
+    background-image:linear-gradient(
+  to bottom right,
+  #FF0000 0%,
+  #FF0000 14.28%,
+  #FF7F00 14.28%,
+  #FF7F00 28.56%,
+  #FFFF00 28.56%,
+  #FFFF00 42.84%,
+  #00FF00 42.84%,
+  #00FF00 57.12%,
+  #0000FF 57.12%,
+  #0000FF 71.40%,
+  #4B0082 71.40%,
+  #4B0082 85.68%,
+  #8B00FF 85.68%,
+  #8B00FF 100%
+);
+
+}
+.box2{
+        background-image: linear-gradient(
+  to bottom left,
+  #FF0000 0%,
+  #FF0000 14.28%,
+  #FF7F00 14.28%,
+  #FF7F00 28.56%,
+  #FFFF00 28.56%,
+  #FFFF00 42.84%,
+  #00FF00 42.84%,
+  #00FF00 57.12%,
+  #0000FF 57.12%,
+  #0000FF 71.40%,
+  #4B0082 71.40%,
+  #4B0082 85.68%,
+  #8B00FF 85.68%,
+  #8B00FF 100%);
+}
+.box:hover {
+    opacity: 0.4;
 }

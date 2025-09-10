@@ -4,6 +4,7 @@
   "description": "A practice npm package for learning and experimenting with Node.js and JavaScript. Designed to help developers understand package creation, publishing, and usage in real projects.",
   "scripts": {
     "start": "parcel index.html",
+    "build":  "parcel build index.html",
     "test": "jest"
   },
   "repository": {
